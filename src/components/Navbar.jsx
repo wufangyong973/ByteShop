@@ -2,8 +2,7 @@ import React from 'react';
 import { ShoppingBag, BookOpen, Laptop, ExternalLink } from 'lucide-react';
 
 export default function Navbar({ cart, onOpenCart }) {
-  // BUG #4: The cart item count badge is hardcoded to 0 instead of calculating total items from the cart
-  const totalItems = 0;
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
