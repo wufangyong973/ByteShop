@@ -11,10 +11,9 @@ export default function CartDrawer({
 }) {
   if (!isOpen) return null;
 
-  // BUG #5: Subtotal calculation concatenates values as strings instead of doing numeric addition!
-  // Fix: Return numeric sum: cart.reduce((total, item) => total + (item.price * item.quantity), 0)
+
   const subtotal = cart.reduce(
-    (total, item) => total + String(item.price * item.quantity),
+    (total, item) => total + (item.price * item.quantity),
     0
   );
 
