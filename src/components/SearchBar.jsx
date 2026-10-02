@@ -15,9 +15,8 @@ export function filterProducts(products, searchQuery, activeCategory) {
       return matchesCategory;
     }
 
-    // BUG #3: Search is case-sensitive! (e.g. searching "keyboard" fails to find "Keyboard")
-    // Fix: Use .toLowerCase() on both product.name and searchQuery
-    const matchesSearch = product.name.includes(searchQuery);
+
+    const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesCategory && matchesSearch;
   });
