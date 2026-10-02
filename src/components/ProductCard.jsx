@@ -23,15 +23,13 @@ export default function ProductCard({ product, onAddToCart, isAdded }) {
 
         {/* Stock Badge */}
         <div className="absolute top-3 right-3">
-          {/* BUG #6: Inverted logic causes in-stock items to display as "Out of Stock" (and vice versa) */}
-          {/* Fix: Swap the ternary branches or check `product.inStock ? "In Stock" : "Out of Stock"` */}
           {product.inStock ? (
-            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200">
-              Out of Stock
-            </span>
-          ) : (
             <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
               In Stock
+            </span>
+          ) : (
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200">
+              Out of Stock
             </span>
           )}
         </div>
