@@ -11,9 +11,8 @@ export default function Banner() {
           <span>Curated Student & Dev Gear</span>
         </div>
         
-        {/* BUG #1: Typo in the main heading ("BtyeShop" instead of "ByteShop") */}
         <h1 className="text-2xl sm:text-4xl font-bold tracking-tight mb-2">
-          Welcome to BtyeShop
+          Welcome to ByteShop
         </h1>
         
         <p className="text-indigo-100/80 text-sm sm:text-base leading-relaxed mb-4">
