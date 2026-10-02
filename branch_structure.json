@@ -1,0 +1,33 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "docs/contributors-list",
+    "fix/banner-headline-typo",
+    "fix/cart-subtotal",
+    "fix/footer-github-link",
+    "fix/navbar-cart-badge",
+    "fix/search-case-insensitive",
+    "main",
+    "probe-pr-test"
+  ],
+  "parent": {
+    "docs/contributors-list": "main",
+    "fix/banner-headline-typo": "main",
+    "fix/cart-subtotal": "main",
+    "fix/footer-github-link": "main",
+    "fix/navbar-cart-badge": "main",
+    "fix/search-case-insensitive": "main",
+    "main": null,
+    "probe-pr-test": "main"
+  },
+  "order": [
+    "main",
+    "docs/contributors-list",
+    "fix/banner-headline-typo",
+    "fix/cart-subtotal",
+    "fix/footer-github-link",
+    "fix/navbar-cart-badge",
+    "fix/search-case-insensitive",
+    "probe-pr-test"
+  ]
+}
