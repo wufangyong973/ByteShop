@@ -29,8 +29,6 @@ export default function Footer() {
             <div className="flex items-center gap-4 pt-2">
               <a
                 href="https://github.com/Pr1nce-Raj/ByteShop"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-slate-400 hover:text-indigo-400 transition-colors p-2 rounded-lg hover:bg-slate-800"
                 aria-label="GitHub Repository"
               >

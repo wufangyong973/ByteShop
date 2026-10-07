@@ -86,8 +86,16 @@ export const INITIAL_PRODUCTS = [
     image: "/products/book_pragmatic.jpg",
     description: "Essential library including Zero to One, Startup Owner's Manual, and leadership guides.",
     inStock: true
+  },
+  {
+    id: 9,
+    name: "Active Noise-Cancelling Headphones",
+    category: "Audio",
+    price: 129,
+    rating: 4.8,
+    reviewsCount: 150,
+    image: "/products/headphones.jpg",
+    description: "Premium over-ear wireless headphones with studio-quality audio.",
+    inStock: true
   }
-  // NOTE FOR CONTRIBUTORS (Issue #7):
-  // The store currently has categories: "Electronics", "Books", "Accessories".
-  // Issue #7 is to add a new product in the "Audio" category (e.g. Wireless Noise-Cancelling Headphones using "/products/headphones.jpg").
 ];

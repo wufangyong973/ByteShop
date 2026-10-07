@@ -40,13 +40,9 @@ export default function CartDrawer({
 
             <div className="flex items-center gap-3">
               {cart.length > 0 && (
-                /* BUG #8: Clear Cart button has an empty click handler! */
-                /* Fix: Call onClearCart: onClick={onClearCart} */
                 <button
                   type="button"
-                  onClick={() => {
-                    // Empty handler! Clear cart does nothing.
-                  }}
+                  onClick={onClearCart}
                   className="text-xs text-rose-600 hover:text-rose-700 font-semibold transition-colors"
                 >
                   Clear Cart
